@@ -1,0 +1,137 @@
+.header
+    width: 100%
+    height: 80px
+    border-bottom: 1px solid lightgrey
+    h1
+        font-weight: 900
+        margin-top: 30px
+        margin-left: 40px
+.post_block
+    width: 100%
+    background: transparent
+    display: flex
+    border-bottom: 10px solid lightgrey
+    padding-bottom: 20px
+.avatar
+    width: 80px
+    height: 80px
+    margin-top: 10px
+    margin-left: 40px
+    cursor: pointer
+    border-radius: 100px
+.wrapper_content
+    width: 400px
+    margin-left: 30px 
+    background: transparent
+.content_inner_text
+    width: 100%
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column-reverse
+    textarea
+        width: 100%
+        min-height: 40px
+        background: transparent
+        border: none
+        outline: none
+        font-size: 20px
+        resize: none
+        margin-top: 35px
+        transition: all 0.3s
+        &:focus
+            min-height: 70px
+            border-bottom: 1px solid lightgrey
+.content_inner_features
+    width: 100%
+    height: 50px
+    background: transparent
+    display: flex
+    justify-content: space-between
+    margin-top: 10px
+    &_wrap_additions
+        width: 250px
+        height: 50px
+        background: transparent
+        // display: flex
+        // align-items: center
+        img
+            width: 40px
+            height: 40px
+            cursor: pointer
+            border-radius: 100px
+            margin-right: 10px
+            background: transparent
+            transition: all 0.3s
+            &:hover
+                background: #acd7f360
+.btn_tweet_content
+    width: 120px
+    height: 50px
+    border-radius: 100px
+    border: none
+    outline: none
+    cursor: pointer
+    background: rgba(29,161,242,1.00)
+    color: white
+    font-size: 18px
+    font-weight: bold
+    transition: all 0.3s
+    &:hover
+        background: #4c758f
+.post_img_item
+    width: 100%
+    max-height: 300px
+    margin-top: 20px
+.post_img_label
+    input
+        display: none
+.wrapper_emojis
+    width: 200px
+    height: 150px
+    background: #84a8c060 
+    margin-left: 50px
+    border-radius: 30px
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    display: flex
+    transition: 0.3s
+    span
+        font-size: 25px
+        cursor: pointer
+        transition: all 0.3s
+        user-select: none
+.post_item
+    border-bottom: 1px solid lightgrey
+    padding-bottom: 20px
+.description_post_item
+    margin: 20px 40px
+    font-weight: 400
+    font-size: 18px
+.img_post_item
+    width: 85%
+    display: block
+    margin: 0 auto
+    border-radius: 30px
+    box-shadow: 0px 0px 22px 1px rgba(0,0,0,0.75)
+    margin-top: 30px
+@mixin btn($count)
+    width: 30px
+    height: 30px
+    margin-left: $count
+    margin-top: 20px
+    background: transparent
+    outline: none
+    user-select: none
+    border: none
+    cursor: pointer
+    transition: all 0.3s
+    border-radius: 100px
+    img
+        width: 100%
+.btn_like
+    @include btn(10px)
+.btn_mark
+    @include btn(60px)

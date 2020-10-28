@@ -1,0 +1,60 @@
+.wrapper_modal
+    width: 100%
+    height: 100vh
+    background: #00000023
+    position: fixed
+    display: none
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    .modal
+        width: 400px
+        background: white
+        margin: 0 auto
+        margin-top: 40px
+        padding-bottom: 30px
+        box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.75)
+        .ariaMes
+            width: 100%
+            min-height: 70px
+            background: transparent
+            border: none
+            outline: none
+            font-size: 20px
+            resize: none
+            transition: all 0.3s
+            padding-left: 30px
+            padding-right: 30px
+            padding-top: 30px
+            &:focus
+                border-bottom: 1px solid lightgrey
+                min-height: 100px
+        .img_additions
+            width: 40px
+            height: 40px
+            cursor: pointer
+            border-radius: 100px
+        .wrapper_additions_items
+            width: 100%
+            background: transparent
+            padding-left: 30px
+            margin-top: 10px
+            margin-bottom: 10px
+            img
+                width: 40px
+                height: 40px
+                cursor: pointer
+                border-radius: 100px
+                margin-right: 10px
+                background: transparent
+                transition: all 0.3s
+                &:hover
+                    background: #acd7f360
+        .btn_tweet_content
+            margin-left: 30px
+.wrapper_emojis_mod
+    margin-bottom: 20px
+.post_img_item_mod
+    width: 100%
+    max-height: 300px

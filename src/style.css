@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Roboto 1234";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Roboto 1234";
+}
+a{
+    text-decoration: none;
+}
